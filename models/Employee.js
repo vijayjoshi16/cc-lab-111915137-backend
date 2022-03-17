@@ -4,6 +4,7 @@ const employeeSchema = new mongoose.Schema({
   employee_id: {
     type: Number,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
